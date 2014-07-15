@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Floor : MonoBehaviour {
     public GameObject floor;
+	public float floorValue;
     float pos;
     int count;
 
@@ -14,7 +15,7 @@ public class Floor : MonoBehaviour {
         count++;
         pos += floor.GetComponent<BoxCollider2D>().size.x;
         Debug.Log(count);
-        if(count < 100){
+		if(count < floorValue){
             GameObject go = GameObject.Instantiate(floor) as GameObject;
             go.transform.position = new Vector3( pos, floor.transform.position.y, floor.transform.position.z);
         }
