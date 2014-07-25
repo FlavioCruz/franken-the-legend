@@ -17,6 +17,17 @@ public class EnemyManager : MonoBehaviour {
 	void ZoombieBehavior()
 	{
 		transform.Translate( new Vector3( -0.1f, 0, 0));
-		//if this.
+		OnCollision2D(player);
+	}
+
+	void OnCollision2D(GameObject other)
+	{
+		if(other.tag == "Player")
+		{
+			if(tag == "Zoombie")
+			{
+				DestroyImmediate(this);
+			}
+		}
 	}
 }
