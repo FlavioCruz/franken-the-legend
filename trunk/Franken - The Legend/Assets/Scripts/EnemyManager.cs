@@ -19,8 +19,9 @@ public class EnemyManager : MonoBehaviour {
 			ZoombieBehavior();
 		if (tag == "Bat")
 		{
-			transform.position = new Vector3(x, y, this.transform.position.z);
-			BatBehavior ();
+			//transform.position = new Vector3(x, y, this.transform.position.z);
+			transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), player.transform.position.y - (transform.position.y - 0.05f), 0);
+			//BatBehavior ();
 		}
 	}
 
@@ -32,9 +33,7 @@ public class EnemyManager : MonoBehaviour {
 
 	void BatBehavior()
 	{
-		x = Input.mousePosition.x;
-		y = Input.mousePosition.y;
-
+		transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), player.transform.position.y - (transform.position.y - 0.05f), 0);
 	}
 
 	void OnCollisionEnter2D(Collision2D other)

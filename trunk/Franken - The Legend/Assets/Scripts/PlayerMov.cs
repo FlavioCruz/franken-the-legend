@@ -2,12 +2,14 @@
 using System.Collections;
 
 public class PlayerMov : MonoBehaviour {
-	public float distToGround;
-	public GameObject floor;
+	//public float distToGround;
+	//public GameObject floor;
 
-	public GameObject bg1;
-	public GameObject bg2;
+	//public GameObject bg1;
+	//public GameObject bg2;
     private bool isLookingBack;
+
+	public static bool canMove = true;
 	// Use this for initialization
     private Animator animator;
     void Awake()
@@ -25,47 +27,52 @@ public class PlayerMov : MonoBehaviour {
 	void Update () 
 	{
         Debug.Log(isLookingBack);
-		distToGround = collider2D.GetComponent<BoxCollider2D>().size.y;
+		//distToGround = collider2D.GetComponent<BoxCollider2D>().size.y;
 
-        
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                isLookingBack = false;
-                this.animator.Play("RunFoward");
-                transform.Translate(0.1f, 0, 0);
-                
-            }
-            else
-            {
-                 if (Input.GetKey(KeyCode.LeftArrow))
-                 {
-                     isLookingBack = true;
-                     this.animator.Play("RunBackward");
-                     transform.Translate(-0.1f, 0, 0);
-                     
-                
-                 }
-                 else
-                 {
-                     
-                     if (isLookingBack == true)
-                     {
-                         this.animator.Play("Idle2");
-                     }
-                     else
-                     {
-                         this.animator.Play("Idle1");
-                     }
-                    
-                 }
-            }
+
+	    if (Input.GetKey(KeyCode.RightArrow))
+	    {
+	        isLookingBack = false;
+	        this.animator.Play("MoveFoward");
+	        transform.Translate(0.1f, 0, 0);
+	        
+	    }
+	    else
+	    {
+	         if (Input.GetKey(KeyCode.LeftArrow) && canMove)
+	         {
+	             isLookingBack = true;
+	             this.animator.Play("MoveBackward");
+	             transform.Translate(-0.1f, 0, 0);
+	             
+	        
+	         }
+	         else
+	         {
+	             
+	             if (isLookingBack == true)
+	             {
+	                 this.animator.Play("Idle2");
+	             }
+	             else
+	             {
+	                 this.animator.Play("Idle1");
+	             }
+	            
+	         }
+	    }
+
+		if(transform.position.x < 0)
+			canMove = false;
+		else if(transform.position.x > 0.5f)
+			canMove = true;
       }
        
 
-	public bool IsGrounded()
-	{
-		return Physics.Raycast(transform.position, floor.transform.position, distToGround + 0.1f);
-	}
+	//public bool IsGrounded()
+	//{
+		//return Physics.Raycast(transform.position, floor.transform.position, distToGround + 0.1f);
+	//}
 
 	public void OnTrigger2DEnter()
 	{
