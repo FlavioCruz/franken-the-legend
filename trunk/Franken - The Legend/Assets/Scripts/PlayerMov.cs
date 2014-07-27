@@ -8,6 +8,8 @@ public class PlayerMov : MonoBehaviour {
 	public GameObject bg1;
 	public GameObject bg2;
 
+	public bool canMoveRight = false;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -35,16 +37,23 @@ public class PlayerMov : MonoBehaviour {
 	public void Move(){
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
-			transform.Translate( 0.1f, 0, 0);
-			bg1.transform.Translate(-0.02f, 0, 0);
-			bg2.transform.Translate(-0.01f, 0, 0);
+			canMoveRight = true;
+			transform.Translate( 0.15f, 0, 0);
+			//GameObject go1 = GetComponent<Floor>().goBG1;
+			//GameObject go2 = GetComponent<Floor>().goBG2;
+			//if(go1 != null & go2 != null)
+			//{
+				//go1.transform.Translate(-0.02f, 0, 0);
+				//go2.transform.Translate(-0.01f, 0, 0);
+			//}
+
 
 		}
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
-			transform.Translate(-0.1f, 0, 0);
-			bg1.transform.Translate(0.02f, 0, 0);
-			bg2.transform.Translate(0.01f, 0, 0);
+			transform.Translate(-0.15f, 0, 0);
+			//bg1.transform.Translate(0.02f, 0, 0);
+			//bg2.transform.Translate(0.01f, 0, 0);
 		}
 		
 		if (Input.GetKeyDown (KeyCode.Space) && IsGrounded())
