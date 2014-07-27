@@ -1,0 +1,906 @@
+fileFormatVersion: 2
+guid: 226cfc6f0a609f342988633ebfa69b67
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Franken_TileSetFlip
+    21300002: Franken_TileSetFlip_0
+    21300004: Franken_TileSetFlip_1
+    21300006: Franken_TileSetFlip_2
+    21300008: Franken_TileSetFlip_3
+    21300010: Franken_TileSetFlip_4
+    21300012: Franken_TileSetFlip_5
+    21300014: Franken_TileSetFlip_6
+    21300016: Franken_TileSetFlip_7
+    21300018: Franken_TileSetFlip_8
+    21300020: Franken_TileSetFlip_9
+    21300022: Franken_TileSetFlip_10
+    21300024: Franken_TileSetFlip_11
+    21300026: Franken_TileSetFlip_12
+    21300028: Franken_TileSetFlip_13
+    21300030: Franken_TileSetFlip_14
+    21300032: Franken_TileSetFlip_15
+    21300034: Franken_TileSetFlip_16
+    21300036: Franken_TileSetFlip_17
+    21300038: Franken_TileSetFlip_18
+    21300040: Franken_TileSetFlip_19
+    21300042: Franken_TileSetFlip_20
+    21300044: Franken_TileSetFlip_21
+    21300046: Franken_TileSetFlip_22
+    21300048: Franken_TileSetFlip_23
+    21300050: Franken_TileSetFlip_24
+    21300052: Franken_TileSetFlip_25
+    21300054: Franken_TileSetFlip_26
+    21300056: Franken_TileSetFlip_27
+    21300058: Franken_TileSetFlip_28
+    21300060: Franken_TileSetFlip_29
+    21300062: Franken_TileSetFlip_30
+    21300064: Franken_TileSetFlip_31
+    21300066: Franken_TileSetFlip_32
+    21300068: Franken_TileSetFlip_33
+    21300070: Franken_TileSetFlip_34
+    21300072: Franken_TileSetFlip_35
+    21300074: Franken_TileSetFlip_36
+    21300076: Franken_TileSetFlip_37
+    21300078: Franken_TileSetFlip_38
+    21300080: Franken_TileSetFlip_39
+    21300082: Franken_TileSetFlip_40
+    21300084: Franken_TileSetFlip_41
+    21300086: Franken_TileSetFlip_42
+    21300088: Franken_TileSetFlip_43
+    21300090: Franken_TileSetFlip_44
+    21300092: Franken_TileSetFlip_45
+    21300094: Franken_TileSetFlip_46
+    21300096: Franken_TileSetFlip_47
+    21300098: Franken_TileSetFlip_48
+    21300100: Franken_TileSetFlip_49
+    21300102: Franken_TileSetFlip_50
+    21300104: Franken_TileSetFlip_51
+    21300106: Franken_TileSetFlip_52
+    21300108: Franken_TileSetFlip_53
+    21300110: Franken_TileSetFlip_54
+    21300112: Franken_TileSetFlip_55
+    21300114: Franken_TileSetFlip_56
+    21300116: Franken_TileSetFlip_57
+    21300118: Franken_TileSetFlip_58
+    21300120: Franken_TileSetFlip_59
+    21300122: Franken_TileSetFlip_60
+    21300124: Franken_TileSetFlip_61
+    21300126: Franken_TileSetFlip_62
+    21300128: Franken_TileSetFlip_63
+    21300130: Franken_TileSetFlip_64
+    21300132: Franken_TileSetFlip_65
+    21300134: Franken_TileSetFlip_66
+    21300136: Franken_TileSetFlip_67
+    21300138: Franken_TileSetFlip_68
+    21300140: Franken_TileSetFlip_69
+    21300142: Franken_TileSetFlip_70
+    21300144: Franken_TileSetFlip_71
+    21300146: Franken_TileSetFlip_72
+    21300148: Franken_TileSetFlip_73
+    21300150: Franken_TileSetFlip_74
+    21300152: Franken_TileSetFlip_75
+    21300154: Franken_TileSetFlip_76
+    21300156: Franken_TileSetFlip_77
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Franken_TileSetFlip_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 325
+        width: 72
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 325
+        width: 71
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_2
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 325
+        width: 73
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_3
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 325
+        width: 80
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_4
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 325
+        width: 76
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_5
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 331
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_6
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 331
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_7
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 331
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_8
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 331
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_9
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 331
+        width: 73
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_10
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 335
+        width: 97
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_11
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 335
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_12
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 313
+        width: 124
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_13
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 338
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_14
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 331
+        width: 70
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_15
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 331
+        width: 92
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_16
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 331
+        width: 87
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_17
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 331
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_18
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 331
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_19
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 331
+        width: 81
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_20
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 331
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_21
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 331
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_22
+      rect:
+        serializedVersion: 2
+        x: 3423
+        y: 331
+        width: 80
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_23
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 325
+        width: 71
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_24
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 332
+        width: 71
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_25
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 331
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 181
+        width: 72
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_27
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 181
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_28
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 181
+        width: 73
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_29
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 181
+        width: 80
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_30
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 181
+        width: 76
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_31
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 177
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_32
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 177
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_33
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 177
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_34
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 177
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_35
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 177
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_36
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 181
+        width: 111
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_37
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 181
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_38
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 159
+        width: 127
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_39
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 184
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_40
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 177
+        width: 77
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_41
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 177
+        width: 105
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_42
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 177
+        width: 97
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_43
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 177
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_44
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 177
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_45
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 177
+        width: 86
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_46
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 177
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_47
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 177
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_48
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 177
+        width: 85
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_49
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 181
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_50
+      rect:
+        serializedVersion: 2
+        x: 3736
+        y: 178
+        width: 79
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_51
+      rect:
+        serializedVersion: 2
+        x: 3879
+        y: 177
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_52
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 25
+        width: 73
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_53
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 25
+        width: 73
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_54
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 25
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_55
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 25
+        width: 82
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_56
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 25
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_57
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 23
+        width: 76
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_58
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 23
+        width: 76
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_59
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 23
+        width: 76
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_60
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 23
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_61
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 23
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_62
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 27
+        width: 116
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_63
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 27
+        width: 110
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_64
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 5
+        width: 131
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_65
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 30
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_66
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 23
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_67
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 23
+        width: 111
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_68
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 23
+        width: 105
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_69
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 23
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_70
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 23
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_71
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 23
+        width: 87
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_72
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 23
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_73
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 23
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_74
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 23
+        width: 86
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_75
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 25
+        width: 73
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_76
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 24
+        width: 80
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Franken_TileSetFlip_77
+      rect:
+        serializedVersion: 2
+        x: 3878
+        y: 23
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
