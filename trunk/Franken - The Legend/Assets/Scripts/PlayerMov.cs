@@ -5,12 +5,15 @@ public class PlayerMov : MonoBehaviour {
 	public float distToGround;
 	public GameObject floor;
 	// Use this for initialization
-	void Start () {
-
+	void Start () 
+	{
+		rigidbody2D.fixedAngle = true;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
+
 		distToGround = collider2D.GetComponent<BoxCollider2D>().size.y;
 
         if (Input.GetKey(KeyCode.RightArrow))

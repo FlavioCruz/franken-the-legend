@@ -18,7 +18,7 @@ public class Floor : MonoBehaviour {
 	void Update () {
         count++;
         pos += floor.GetComponent<BoxCollider2D>().size.x;
-        Debug.Log(count);
+        //Debug.Log(count);
 		if(count < floorValue){
             go = GameObject.Instantiate(floor) as GameObject;
             go.transform.position = new Vector3( pos, floor.transform.position.y, floor.transform.position.z);
