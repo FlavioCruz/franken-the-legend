@@ -71,7 +71,7 @@ public class Floor : MonoBehaviour
 	{
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
-			Debug.Log("Left Key");
+			
 			parentBG1.transform.Translate(0.02f, 0, 0);
 			parentBG2.transform.Translate(0.01f, 0, 0);
 		}
