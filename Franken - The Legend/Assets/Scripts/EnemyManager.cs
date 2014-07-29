@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyManager : MonoBehaviour {
 	public GameObject player;
-	float zoombieVelocity = 0.1f;
+	public float zoombieVelocity = 0.1f;
 	float x, y;
 
 	// Use this for initialization
@@ -36,7 +36,7 @@ public class EnemyManager : MonoBehaviour {
 		transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), player.transform.position.y - (transform.position.y - 0.05f), 0);
 	}
 
-	void OnCollisionEnter2D(Collision2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.tag == "Player")
 		{
