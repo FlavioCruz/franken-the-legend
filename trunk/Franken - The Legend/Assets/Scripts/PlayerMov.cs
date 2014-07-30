@@ -9,6 +9,8 @@ public class PlayerMov : MonoBehaviour {
 	//public GameObject bg2;
     private bool isLookingBack;
 
+	public static bool takingDamage = false;
+
 	public static bool canMove = true;
 	// Use this for initialization
     private Animator animator;
@@ -26,7 +28,7 @@ public class PlayerMov : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-        Debug.Log(isLookingBack);
+        //Debug.Log(isLookingBack);
 		//distToGround = collider2D.GetComponent<BoxCollider2D>().size.y;
 
 
@@ -66,6 +68,11 @@ public class PlayerMov : MonoBehaviour {
 			canMove = false;
 		else if(transform.position.x > 0.5f)
 			canMove = true;
+
+		if(takingDamage)
+		{
+			Debug.Log("Player is taking damage");
+		}
       }
        
 

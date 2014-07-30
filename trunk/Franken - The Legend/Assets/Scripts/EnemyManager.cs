@@ -42,9 +42,10 @@ public class EnemyManager : MonoBehaviour {
 		{
 			if(gameObject.tag == "Zoombie")
 			{
-				Debug.Log(other.gameObject.tag + " : " + gameObject.tag);
-				Debug.Log("Colidiu");
+				//Debug.Log(other.gameObject.tag + " : " + gameObject.tag);
+				//Debug.Log("Colidiu");
 				zoombieVelocity = 0;
+				PlayerMov.takingDamage = true;	
 			}
 		}
 	}
