@@ -1,26 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Floor : MonoBehaviour 
+public class Floor : MonoBehaviour
 {
+    #region variaveis
     public GameObject floor;
 	public GameObject bg1;
 	public GameObject bg2;
 	public GameObject player;
 	public GameObject parentBG1, parentBG2;
-
+    
 	public float floorValue;
     float posFloor;
 	float posBG1;
 	float posBG2;
-    public int count;
+        int count;
 	public GameObject goFloor;
 	public GameObject goBG1;
 	public GameObject goBG2;
 	public float bossArea;
-	//public GameObject[] arrayBG1, arrayBG2;
+    //public GameObject[] arrayBG1, arrayBG2;
+    #endregion
 
-	void Start () 
+    void Start () 
 	{
 		count = 0;
         posFloor = floor.transform.position.x;
@@ -71,14 +73,14 @@ public class Floor : MonoBehaviour
 	{
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
-			//Debug.Log("Left Key");
-			parentBG1.transform.Translate(0.02f, 0, 0);
+			
+			parentBG1.transform.Translate(0.005f, 0, 0);
 			parentBG2.transform.Translate(0.01f, 0, 0);
 		}
 		
 		if (Input.GetKey(KeyCode.LeftArrow) && PlayerMov.canMove)
 		{
-			parentBG1.transform.Translate(-0.02f, 0, 0);
+			parentBG1.transform.Translate(-0.005f, 0, 0);
 			parentBG2.transform.Translate(-0.01f, 0, 0);
 			
 		}
