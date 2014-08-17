@@ -5,8 +5,15 @@ public class EnemyManager : MonoBehaviour {
 	public GameObject player;
 	public float zoombieVelocity = 0.1f;
 	float x, y;
+    private Animator animator;
+    private bool isCollinding = false;
 
 	// Use this for initialization
+    void Awake() 
+    {
+        animator = GetComponent<Animator>();
+    }
+
 	void Start () 
 	{
 	
@@ -20,24 +27,29 @@ public class EnemyManager : MonoBehaviour {
 		if (tag == "Bat")
 		{
 			//transform.position = new Vector3(x, y, this.transform.position.z);
-			transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), player.transform.position.y - (transform.position.y - 0.05f), 0);
+			transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), 
+                player.transform.position.y - (transform.position.y - 0.05f), 0);
 			//BatBehavior ();
 		}
 	}
 
 	void ZoombieBehavior()
 	{
+        if (isCollinding == false)
+            animator.Play("ZoombieWalking");
 		transform.Translate( new Vector3( -(float)zoombieVelocity, 0, 0));
 		//OnCollision2D(player.collider2D);
 	}
 
 	void BatBehavior()
 	{
-		transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), player.transform.position.y - (transform.position.y - 0.05f), 0);
+		transform.Translate( player.transform.position.x - (transform.position.x - 0.05f),
+            player.transform.position.y - (transform.position.y - 0.05f), 0);
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+        isCollinding = true;
 		if(other.gameObject.tag == "Player")
 		{
 			if(gameObject.tag == "Zoombie")
@@ -45,8 +57,14 @@ public class EnemyManager : MonoBehaviour {
 				//Debug.Log(other.gameObject.tag + " : " + gameObject.tag);
 				//Debug.Log("Colidiu");
 				zoombieVelocity = 0;
+                animator.Play("ZombieAttack");
 				PlayerMov.takingDamage = true;	
 			}
 		}
 	}
+
+    void OnTriggerExit2D(Collider2D other) 
+    {
+        isCollinding = false;
+    }
 }
