@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CamFollow.cs" />
      <Compile Include="Assets\Scripts\ChaoOffset.cs" />
+     <Compile Include="Assets\Scripts\EnemyGeneration.cs" />
      <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Floor.cs" />
      <Compile Include="Assets\Scripts\PlayerMov.cs" />

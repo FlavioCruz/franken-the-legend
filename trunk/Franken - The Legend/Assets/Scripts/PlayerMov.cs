@@ -11,6 +11,8 @@ public class PlayerMov : MonoBehaviour {
 
 	public static bool takingDamage = false;
 
+    public static bool isAttacking = false;
+
 	public static bool canMove = true;
 	// Use this for initialization
     private Animator animator;
@@ -73,6 +75,13 @@ public class PlayerMov : MonoBehaviour {
 		{
 			Debug.Log("Player is taking damage");
 		}
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            isAttacking = true;
+        }
+        else
+            isAttacking = false;
       }
        
 

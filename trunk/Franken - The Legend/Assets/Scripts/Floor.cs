@@ -20,7 +20,24 @@ public class Floor : MonoBehaviour
 	public GameObject goBG2;
 	public float bossArea;
     //public GameObject[] arrayBG1, arrayBG2;
+
+    public GameObject clonable;
+    GameObject curr;
+
+    public int enemyCount;
+    
     #endregion
+
+    void Awake()
+    {
+        float posOrig = clonable.transform.position.x;
+        for (int i = 0; i < enemyCount; i++)
+        {
+            curr = GameObject.Instantiate(clonable) as GameObject;
+            curr.transform.position = new Vector3(posOrig + 5, -1.745774f, 0);
+            posOrig = curr.transform.position.x;
+        }
+    }
 
     void Start () 
 	{
