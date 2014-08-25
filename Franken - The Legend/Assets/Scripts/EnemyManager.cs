@@ -8,6 +8,12 @@ public class EnemyManager : MonoBehaviour {
     private Animator animator;
     private bool isCollinding = false;
 
+    public GameObject target;   
+
+    public bool takingDamageEnemy = false;
+
+    bool isLookingLeft = true;
+
 	// Use this for initialization
     void Awake() 
     {
@@ -35,9 +41,29 @@ public class EnemyManager : MonoBehaviour {
 
 	void ZoombieBehavior()
 	{
-        if (isCollinding == false)
-            animator.Play("ZoombieWalking");
-		transform.Translate( new Vector3( -(float)zoombieVelocity, 0, 0));
+        if(!takingDamageEnemy)
+        {
+            if (isCollinding == false)
+            {
+                animator.Play("ZoombieWalking");
+                
+                if (target.transform.position.x <= this.transform.position.x)
+                {
+                    transform.Translate(new Vector3(-(float)zoombieVelocity, 0, 0));
+                    if (!isLookingLeft)
+                        transform.Rotate(new Vector3( 0, 180, 0));
+                    isLookingLeft = true;
+                }
+                else
+                {
+                    
+                    transform.Translate(new Vector3(-(float)zoombieVelocity, 0, 0));
+                    if (isLookingLeft)
+                        transform.Rotate(new Vector3(0, 180, 0));
+                    isLookingLeft = false;
+                }
+            }
+        }
 		//OnCollision2D(player.collider2D);
 	}
 
@@ -47,7 +73,7 @@ public class EnemyManager : MonoBehaviour {
             player.transform.position.y - (transform.position.y - 0.05f), 0);
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
         isCollinding = true;
 		if(other.gameObject.tag == "Player")
@@ -58,7 +84,14 @@ public class EnemyManager : MonoBehaviour {
 				//Debug.Log("Colidiu");
 				zoombieVelocity = 0;
                 animator.Play("ZombieAttack");
-				PlayerMov.takingDamage = true;	
+				PlayerMov.takingDamage = true;
+	
+                if(PlayerMov.isAttacking)
+                {
+                    takingDamageEnemy = true;
+                    //animator.Play("ZoombieWalking");
+                    Destroy(gameObject);
+                }
 			}
 		}
 	}
@@ -66,5 +99,6 @@ public class EnemyManager : MonoBehaviour {
     void OnTriggerExit2D(Collider2D other) 
     {
         isCollinding = false;
+        zoombieVelocity = 0.01f;
     }
 }
