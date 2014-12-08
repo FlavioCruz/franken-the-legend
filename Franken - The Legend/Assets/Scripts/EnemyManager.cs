@@ -1,55 +1,71 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyManager : MonoBehaviour {
+public class EnemyManager : MonoBehaviour 
+{
+
+	public enum EnemyType
+	{
+		ZOMBIE,
+		BAT
+	}
+
+
 	public GameObject player;
-	public float zoombieVelocity = 0.1f;
-	float x, y;
-    private Animator animator;
-    private bool isCollinding = false;
 
-    public GameObject target;   
+	public float enemySpeed = 0.1f;
+    private Animator myAnimation;
+	public EnemyType myType;
+	public float myHP;
+	public float myAttackDamage;
 
-    public bool takingDamageEnemy = false;
 
+	private bool isCollinding = false;   
+	public bool isAttacking = false;
+    public bool receivingDamage = false;
     bool isLookingLeft = true;
 
-	// Use this for initialization
+
     void Awake() 
     {
-        animator = GetComponent<Animator>();
+        myAnimation = GetComponent<Animator>();
     }
 
-	void Start () 
+	void Start()
 	{
-	
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
-		if (tag == "Zoombie")
-			ZoombieBehavior();
-		if (tag == "Bat")
+		if (myHP <= 0) 
 		{
-			//transform.position = new Vector3(x, y, this.transform.position.z);
-			transform.Translate( player.transform.position.x - (transform.position.x - 0.05f), 
-                player.transform.position.y - (transform.position.y - 0.05f), 0);
-			//BatBehavior ();
+			StartCoroutine("Die");
+		}
+		else
+		{
+			if (myType == EnemyType.ZOMBIE)
+			{
+				ZombieMovement();
+			}
+			if (myType == EnemyType.BAT)
+			{
+				BatMovement();
+			}
 		}
 	}
 
-	void ZoombieBehavior()
+	void ZombieMovement()
 	{
-        if(!takingDamageEnemy)
+        if(!receivingDamage)
         {
             if (isCollinding == false)
             {
-                animator.Play("ZoombieWalking");
+                myAnimation.Play("ZoombieWalking");
                 
-                if (target.transform.position.x <= this.transform.position.x)
+                if (player.transform.position.x <= this.transform.position.x)
                 {
-                    transform.Translate(new Vector3(-(float)zoombieVelocity, 0, 0));
+                    transform.Translate(new Vector3(-(float)enemySpeed, 0, 0));
                     if (!isLookingLeft)
                         transform.Rotate(new Vector3( 0, 180, 0));
                     isLookingLeft = true;
@@ -57,39 +73,49 @@ public class EnemyManager : MonoBehaviour {
                 else
                 {
                     
-                    transform.Translate(new Vector3(-(float)zoombieVelocity, 0, 0));
+                    transform.Translate(new Vector3(-(float)enemySpeed, 0, 0));
                     if (isLookingLeft)
+					{
                         transform.Rotate(new Vector3(0, 180, 0));
+					}
                     isLookingLeft = false;
                 }
             }
         }
-		//OnCollision2D(player.collider2D);
 	}
 
-	void BatBehavior()
+	void BatMovement()
 	{
-		transform.Translate( player.transform.position.x - (transform.position.x - 0.05f),
-            player.transform.position.y - (transform.position.y - 0.05f), 0);
+		transform.Translate(
+			player.transform.position.x - (transform.position.x - 0.05f),
+    		player.transform.position.y - (transform.position.y - 0.05f),
+		    0);
+	}
+
+	public void ApplyDamage(float damageReceived)
+	{
+		if (!receivingDamage) 
+		{
+			receivingDamage = true;
+
+		}
 	}
 
 	void OnTriggerStay2D(Collider2D other)
 	{
         isCollinding = true;
-		if(other.gameObject.tag == "Player")
+		if(other.gameObject == player)
 		{
-			if(gameObject.tag == "Zoombie")
+			if(myType == EnemyType.ZOMBIE)
 			{
-				//Debug.Log(other.gameObject.tag + " : " + gameObject.tag);
-				//Debug.Log("Colidiu");
-				zoombieVelocity = 0;
-                animator.Play("ZombieAttack");
-				PlayerMov.takingDamage = true;
+				enemySpeed = 0;
+                myAnimation.Play("ZombieAttack");
+				PlayerMov.instance.ApplyDamage(myAttackDamage);
 	
-                if(PlayerMov.isAttacking)
+                if(PlayerMov.instance.isAttacking)
                 {
-                    takingDamageEnemy = true;
-                    //animator.Play("ZoombieWalking");
+                    receivingDamage = true;
+					PlayerMov.instance.takingDamage = false;
                     Destroy(gameObject);
                 }
 			}
@@ -99,6 +125,25 @@ public class EnemyManager : MonoBehaviour {
     void OnTriggerExit2D(Collider2D other) 
     {
         isCollinding = false;
-        zoombieVelocity = 0.01f;
+        enemySpeed = 0.01f;
+		PlayerMov.instance.takingDamage = false;
     }
+
+	public void StrikeOver()
+	{
+		isAttacking = false;
+	}
+
+	public void StrikeStart()
+	{
+		isAttacking = true;
+	}
+
+	public IEnumerator Die()
+	{
+		myAnimation.SetTrigger ("Dying");
+		PlayerMov.instance.takingDamage = false;
+		yield return new WaitForSeconds(2);
+		Destroy (this);
+	}
 }
