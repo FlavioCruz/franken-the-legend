@@ -1,43 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMov : MonoBehaviour {
-	//public float distToGround;
-	//public GameObject floor;
+public class PlayerMov : MonoBehaviour 
+{
 
-	//public GameObject bg1;
-	//public GameObject bg2;
+	public static PlayerMov instance;
+
     private bool isLookingBack;
 
-	public static bool takingDamage = false;
+	public bool takingDamage = false;
+    public bool isAttacking = false;
+	public bool canMove = true;
 
-    public static bool isAttacking = false;
+	public float myHP;
 
-	public static bool canMove = true;
-	// Use this for initialization
-    private Animator animator;
+    private Animator myAnimation;
+
+
     void Awake()
     {
-        animator = GetComponent<Animator>();
+		if (PlayerMov.instance == null)
+			instance = this;
+
+		if (instance != this)
+			Destroy (this);
+
+
+        myAnimation = GetComponent<Animator>();
     }
 
 	void Start () 
 	{
-        
 		rigidbody2D.fixedAngle = true;
 	}
-	
-	// Update is called once per frame
+
 	void Update () 
 	{
-        //Debug.Log(isLookingBack);
-		//distToGround = collider2D.GetComponent<BoxCollider2D>().size.y;
-
 
 	    if (Input.GetKey(KeyCode.RightArrow))
 	    {
 	        isLookingBack = false;
-	        this.animator.Play("MoveFoward");
+	        this.myAnimation.Play("MoveFoward");
 	        transform.Translate(0.1f, 0, 0);
 	        
 	    }
@@ -46,21 +49,19 @@ public class PlayerMov : MonoBehaviour {
 	         if (Input.GetKey(KeyCode.LeftArrow) && canMove)
 	         {
 	             isLookingBack = true;
-	             this.animator.Play("MoveBackward");
+	             this.myAnimation.Play("MoveBackward");
 	             transform.Translate(-0.1f, 0, 0);
-	             
-	        
 	         }
 	         else
 	         {
 	             
 	             if (isLookingBack == true)
 	             {
-	                 this.animator.Play("Idle2");
+	                 this.myAnimation.Play("Idle2");
 	             }
 	             else
 	             {
-	                 this.animator.Play("Idle1");
+	                 this.myAnimation.Play("Idle1");
 	             }
 	            
 	         }
@@ -70,11 +71,6 @@ public class PlayerMov : MonoBehaviour {
 			canMove = false;
 		else if(transform.position.x > 0.5f)
 			canMove = true;
-
-		if(takingDamage)
-		{
-			Debug.Log("Player is taking damage");
-		}
 
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -94,6 +90,16 @@ public class PlayerMov : MonoBehaviour {
 	{
 
 	}  
+
+	public void ApplyDamage(float damageReceived)
+	{
+		if (takingDamage)
+			return;
+		
+		takingDamage = true;
+		Debug.Log ("Player got hit");
+		myHP -= damageReceived;
+	}
       
 		
  

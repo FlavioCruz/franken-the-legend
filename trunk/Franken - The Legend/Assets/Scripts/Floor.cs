@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Floor : MonoBehaviour
 {
-    #region variaveis
+    #region variables
     public GameObject floor;
 	public GameObject bg1;
 	public GameObject bg2;
@@ -14,30 +14,16 @@ public class Floor : MonoBehaviour
     float posFloor;
 	float posBG1;
 	float posBG2;
-        int count;
+    int count;
 	public GameObject goFloor;
 	public GameObject goBG1;
 	public GameObject goBG2;
 	public float bossArea;
     //public GameObject[] arrayBG1, arrayBG2;
 
-    public GameObject clonable;
-    GameObject curr;
-
-    public int enemyCount;
     
     #endregion
 
-    void Awake()
-    {
-        float posOrig = clonable.transform.position.x;
-        for (int i = 0; i < enemyCount; i++)
-        {
-            curr = GameObject.Instantiate(clonable) as GameObject;
-            curr.transform.position = new Vector3(posOrig + 5, -1.745774f, 0);
-            posOrig = curr.transform.position.x;
-        }
-    }
 
     void Start () 
 	{
@@ -95,7 +81,7 @@ public class Floor : MonoBehaviour
 			parentBG2.transform.Translate(0.01f, 0, 0);
 		}
 		
-		if (Input.GetKey(KeyCode.LeftArrow) && PlayerMov.canMove)
+		if (Input.GetKey(KeyCode.LeftArrow) && PlayerMov.instance.canMove)
 		{
 			parentBG1.transform.Translate(-0.005f, 0, 0);
 			parentBG2.transform.Translate(-0.01f, 0, 0);
